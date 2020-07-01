@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "Ahlan wa sahlan...
+Masukkan virtual domain dan port yang akan digunakan dalam mode development ini,
+tuliskan dengan format berikut (tanpa menggunakan kurung siku dan spasi):
+--------------------------------------------
+[ xxx.xxx.xxx ][ : ][ port ]
+
+contoh:
+1) belajar.localhost:9000
+2) api.belajar.localhost:9001
+--------------------------------------------
+Silahkan ketik dibawah ini: (kalau udah tekan ENTER yaa!)"
+read virtual_domain_port
+echo "--------------------------------------------
+SEDANG MENCOBA MENJALANKAN SERVER DEVELOPMENT
+--...-----...-----...-----...-----...-----...---"
+
+./php-bin/php -S $virtual_domain_port ./php-bin/router.php
